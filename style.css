@@ -1,0 +1,146 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #2563eb;
+  --primary-light: #60a5fa;
+  --dark: #0f172a;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --border-radius: 12px;
+  --container-width: 1200px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--dark);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--text);
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--primary-light);
+}
+
+/* Header */
+.header {
+  background: rgba(15, 23, 42, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--primary-light);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--primary);
+}
+
+/* Hero Section */
+.hero {
+  background: url('your-image.jpg') no-repeat center center/cover;
+  color: var(--text);
+  padding: 10rem 1rem 5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+button {
+  background-color: var(--primary);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+/* Section Styles */
+.section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  background-color: rgba(15, 23, 42, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  color: var(--text);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: rgba(15, 23, 42, 0.9);
+  color: var(--text-muted);
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
