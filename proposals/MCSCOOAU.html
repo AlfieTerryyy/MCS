@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codex - Alfie Terry</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-light: #60a5fa;
+            --dark: #0f172a;
+            --dark-lighter: #1e293b;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border-radius: 12px;
+            --container-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+            color: var(--text);
+            background: var(--dark);
+            background-image: radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(37, 99, 235, 0.1) 0%, transparent 50%);
+            line-height: 1.6;
+            padding: 3rem 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--text), var(--primary-light));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1.5rem;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .item {
+            background: rgba(15, 23, 42, 0.8);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .item-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--primary-light);
+            margin-bottom: 1rem;
+        }
+
+        .item-justification {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .item-content {
+            font-size: 1.125rem;
+            color: var(--text);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .item a {
+            display: inline-block;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            background: rgba(37, 99, 235, 0.1);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .item a:hover {
+            background: var(--primary-light);
+            color: var(--dark);
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid rgba(37, 99, 235, 0.2);
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>The MCS Codex of Order and Unity</h1>
+    </header>
+
+    <div class="container">
+        <div class="item">
+            <div class="item-title">ITEM 1: Emergency Powers Act</div>
+            <div class="item-justification">Justification: For the safety and stability of the server during emergencies.</div>
+            <div class="item-content">Allows the server leader to take temporary absolute control in case of a crisis, such as a "server invasion," "resource depletion," or "economic instability."</div>
+        </div>
+
+        <div class="item">
+            <div class="item-title">ITEM 2: Efficiency Governance Act</div>
+            <div class="item-justification">Justification: To streamline decision-making and reduce legislative gridlock.</div>
+            <div class="item-content">Permits a smaller "Executive Committee" to make critical decisions without requiring a full parliamentary vote.</div>
+        </div>
+      
+        <div class="item">
+            <div class="item-title">ITEM 3: National Resource Oversight Law</div>
+            <div class="item-justification">Justification: To ensure fair use of server resources.</div>
+            <div class="item-content">Creates a centralized authority to oversee all resources, with the government as the "fair and impartial managers." All players must report their resource earnings and get permission to build large projects.
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-title">ITEM 4: Security Protocol Mandate</div>
+            <div class="item-justification">Justification: To protect the server from internal and external threats.</div>
+            <div class="item-content">Requires all server members to register their weapons, potions, and TNT usage with a "security council" Non-compliance leads to confiscation.</div>
+        </div>
+        <div class="item">
+            <div class="item-title">ITEM 5: National Infrastructure Act</div>
+            <div class="item-justification">Justification: To improve server infrastructure for everyone's benefit.</div>
+            <div class="item-content">Places all major roads, portals, and community farms under government direct management, granting government control over server movement and resources.
+        </div>
+        </div>
+        <div class="item">
+            <div class="item-title">ITEM 6: Taxation and Resource Redistribution Act</div>
+            <div class="item-justification">Justification: For equality and fairness.</div>
+            <div class="item-content">Implements a tax on high-value resources (diamonds, netherite) and redistributes them as "rewards" for loyalty or good behavior, managed by the council.
+ </div>
+        </div>
+        <div class="item">
+            <div class="item-title">ITEM 7: The Anti-Corruption Initiative</div>
+            <div class="item-justification">Justification: To ensure transparency in governance.</div>
+            <div class="item-content">Allows the "anti-corruption task force" to investigate anyone suspected of corruption. This can be used to discredit political rivals.</div>
+        </div>
+         <div class="item">
+            <div class="item-title">ITEM 8: Historical Preservation Decree</div>
+            <div class="item-justification">Justification: To honor the server's history.</div>
+            <div class="item-content">Grants government control over areas deemed "historically significant," blocking others from altering key server zones.</div>
+        </div>
+        <div class="item">
+            <div class="item-title">ITEM 9: Censorship Protection Law</div>
+            <div class="item-justification">Justification: To maintain a positive environment.</div>
+            <div class="item-content">government authority to remove "toxic" chat messages or dissenting opinions under the guise of server harmony.</div>
+        </div>
+        <div class="item">
+            <div class="item-title">ITEM 10: Server Election Integrity Act</div>
+            <div class="item-justification">Justification: To ensure fair representation.</div>
+            <div class="item-content">Introduces complex voting procedures controlled by government, such as requiring "eligibility tokens" that you distribute to ensure only "committed" players can vote.</div>
+        </div>
+        <div class="item">
+            <div class="item-title">ITEM 11: Knowledge Centralization Act</div>
+            <div class="item-justification">Justification: To create a server library for everyone's benefit.</div>
+            <div class="item-content">Requires all enchanted books, maps, and written books to be stored in a "central library" managed by the government. Players can only borrow them temporarily with explicit permission.</div>
+        </div>
+        <div class="item">
+            <div class="item-title">ITEM 12: Defense Contribution Act</div>
+            <div class="item-justification">Justification: To prepare the server against external threats (e.g., raids, PvP events).</div>
+            <div class="item-content">Mandates regular contributions of weapons, armor, and rare resources to a "defense fund," controlled by the government. as community effort to ensure safety.</div>
+        </div>
+ 
+        <div class="item">
+            <div class="item-title">ITEM 13: Environmental Preservation Act</div>
+            <div class="item-justification">Justification: To protect the natural beauty of the server.</div>
+            <div class="item-content">Establishes protected areas where mining, building, and deforestation are prohibited to maintain the server's ecological balance.</div>
+        </div>
+
+        <div class="item">
+            <div class="item-title">ITEM 14: Trade Regulation Act</div>
+            <div class="item-justification">Justification: To ensure fair and consistent trade practices.</div>
+            <div class="item-content">Requires all trades above a certain value to be documented and reported to the "Trade Council" for approval.</div>
+        </div>
+
+        <div class="item">
+            <div class="item-title">ITEM 15: Education and Training Initiative</div>
+            <div class="item-justification">Justification: To improve the skills and knowledge of server members.</div>
+            <div class="item-content">Introduces workshops and training sessions for tasks like redstone, building, and PvP techniques.</div>
+        </div>
+
+        <div class="item">
+            <div class="item-title">ITEM 16: Server Unity Celebration Act</div>
+            <div class="item-justification">Justification: To promote community bonding and morale.</div>
+            <div class="item-content">Establishes a monthly event where players gather for games, challenges, and server-wide builds.</div>
+        </div>
+
+        <div class="item">
+            <div class="item-title">ITEM 17: Server Defense Coalition</div>
+            <div class="item-justification">Justification: To organize collective defense efforts.</div>
+            <div class="item-content">Forms a coalition of trusted players to strategize and respond to external threats like raids or griefers.</div>
+        </div>
+
+        <div class="item">
+            <div class="item-title">ITEM 18: Creative Innovation Act</div>
+            <div class="item-justification">Justification: To encourage unique and innovative builds.</div>
+            <div class="item-content">Introduces a reward system for players who create outstanding builds or contribute innovative ideas to the server.</div>
+        </div>
+
+        <div class="item">
+            <div class="item-title">ITEM 19: Economic Stability Initiative</div>
+            <div class="item-justification">Justification: To stabilize the server's economy.</div>
+            <div class="item-content">Implements a standardized currency system and regulates the prices of rare resources.</div>
+        </div>
+
+        <div class="item">
+            <div class="item-title">ITEM 20: Freedom of Creativity Act</div>
+            <div class="item-justification">Justification: To ensure players can express themselves freely.</div>
+            <div class="item-content">Protects players' rights to build and create freely, as long as their projects do not conflict with established laws or harm the server's harmony.</div>
+        </div>
+    </div>
+
+    <hr />
+</body>
+
+</html>
